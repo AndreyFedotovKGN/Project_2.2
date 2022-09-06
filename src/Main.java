@@ -15,11 +15,16 @@ public class Main {
 
         System.out.println(harryPotter);
         System.out.println(zachariahSmith);
-        Gryffindor.comparisonOfStudents(harryPotter,ronWeasley);
-        Hufflepuff.comparisonOfStudents(zachariahSmith,cedricDiggory);
-        Ravenclaw.comparisonOfStudents(padmaPatil,marcusBelby);
-        Slytherin.comparisonOfStudents(dracoMalfoy,gregoryGoyle);
-        Hogwarts.comparisonOfStudents(padmaPatil,hermioneGranger);
+
+        harryPotter.comparisonOfStudents(ronWeasley);
+        ronWeasley.comparisonOfStudents(hermioneGranger);
+        zachariahSmith.comparisonOfStudents(cedricDiggory);
+        padmaPatil.comparisonOfStudents(marcusBelby);
+        dracoMalfoy.comparisonOfStudents(gregoryGoyle);
+        padmaPatil.comparisonOfStudents(hermioneGranger);
+
+
+
 
 
     }

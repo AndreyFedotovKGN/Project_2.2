@@ -42,15 +42,27 @@ public class Gryffindor extends Hogwarts {
                 honor + " храбрость = " + bravery;
     }
 
-    public  static void comparisonOfStudents(Gryffindor firstName, Gryffindor secondName) {
-        int theSumOfTalentsOfTheFirstStudent = firstName.getTransgression() + firstName.getWitchcraft() + firstName.getHonor() + firstName.getNobility() + firstName.getBravery();
+    public void comparisonOfStudents(Gryffindor secondName) {
+        int theSumOfTalentsOfTheFirstStudent = this.getTransgression() + this.getWitchcraft() + this.getHonor() + this.getNobility() + this.getBravery();
         int theSumOfTalentsOfTheSecondStudent = secondName.getWitchcraft()+secondName.getTransgression()+secondName.getNobility()+secondName.getHonor()+secondName.getBravery();
         if (theSumOfTalentsOfTheFirstStudent > theSumOfTalentsOfTheSecondStudent) {
-            System.out.println(firstName.getName()+firstName.getSurName() + " лучший студент Грифендора, чем " + secondName.getName() + secondName.getSurName());
+            System.out.println(this.getName() + this.getSurName() + " лучший студент Грифендора, чем " + secondName.getName() + secondName.getSurName());
         } else if (theSumOfTalentsOfTheFirstStudent == theSumOfTalentsOfTheSecondStudent) {
-            System.out.println("Силы " + firstName.getName()+firstName.getSurName() + " и " + secondName.getName() + secondName.getSurName() + " равны");
-        } else System.out.println(secondName.getName() + secondName.getSurName() + " лучший студент Грифендора, чем " + firstName.getName()+firstName.getSurName());
+            System.out.println("Силы " + this.getName() + this.getSurName() + " и " + secondName.getName() + secondName.getSurName() + " равны");
+        } else System.out.println(secondName.getName() + secondName.getSurName() + " лучший студент Грифендора, чем " + this.getName() + this.getSurName());
     }
 }
+
+
+//    public  static void comparisonOfStudents(Gryffindor firstName, Gryffindor secondName) {
+//        int theSumOfTalentsOfTheFirstStudent = firstName.getTransgression() + firstName.getWitchcraft() + firstName.getHonor() + firstName.getNobility() + firstName.getBravery();
+//        int theSumOfTalentsOfTheSecondStudent = secondName.getWitchcraft()+secondName.getTransgression()+secondName.getNobility()+secondName.getHonor()+secondName.getBravery();
+//        if (theSumOfTalentsOfTheFirstStudent > theSumOfTalentsOfTheSecondStudent) {
+//            System.out.println(firstName.getName()+firstName.getSurName() + " лучший студент Грифендора, чем " + secondName.getName() + secondName.getSurName());
+//        } else if (theSumOfTalentsOfTheFirstStudent == theSumOfTalentsOfTheSecondStudent) {
+//            System.out.println("Силы " + firstName.getName()+firstName.getSurName() + " и " + secondName.getName() + secondName.getSurName() + " равны");
+//        } else System.out.println(secondName.getName() + secondName.getSurName() + " лучший студент Грифендора, чем " + firstName.getName()+firstName.getSurName());
+//    }
+
 
 

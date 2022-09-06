@@ -1,4 +1,4 @@
-public class Hogwarts {
+public abstract class Hogwarts {
     private final String name;
     private final String surName;
     private int witchcraft;
@@ -40,13 +40,27 @@ public class Hogwarts {
         return "Ученик(ца) " + name + " " + surName + " сила магии = " + witchcraft + " сила трансгрессии = " + transgression;
     }
 
-    public static void comparisonOfStudents(Hogwarts firstName, Hogwarts secondName) {
-        int theMagicOfTheFirstStudent = firstName.getWitchcraft() + firstName.getTransgression();
+    public  void comparisonOfStudents(Hogwarts secondName) {
+        int theMagicOfTheFirstStudent = this.getWitchcraft() + this.getTransgression();
         int theMagicOfTheSecondStudent = secondName.getWitchcraft() + secondName.getTransgression();
         if (theMagicOfTheFirstStudent > theMagicOfTheSecondStudent) {
-            System.out.println(firstName.getName() + firstName.getSurName() + " обладает большей мощностью магии, чем " + secondName.getName()+secondName.getSurName());
+            System.out.println(this.getName() + this.getSurName() + " обладает большей мощностью магии, чем " + secondName.getName()+secondName.getSurName());
         } else if (theMagicOfTheFirstStudent == theMagicOfTheSecondStudent) {
-            System.out.println("Cила магии " + firstName.getName() + firstName.getSurName() + " равна силе магии " + secondName.getName()+secondName.getSurName());
-        } else System.out.println(secondName.getName()+secondName.getSurName() + " обладает большей мощностью магии, чем " + firstName.getName() + firstName.getSurName());
+            System.out.println("Cила магии " + this.getName() + this.getSurName() + " равна силе магии " + secondName.getName()+secondName.getSurName());
+        } else System.out.println(secondName.getName() + secondName.getSurName() + " обладает большей мощностью магии, чем " + this.getName() + this.getSurName());
     }
 }
+//    public static void comparisonOfStudents(Hogwarts firstName, Hogwarts secondName) {
+//        int theMagicOfTheFirstStudent = firstName.getWitchcraft() + firstName.getTransgression();
+//        int theMagicOfTheSecondStudent = secondName.getWitchcraft() + secondName.getTransgression();
+//        if (theMagicOfTheFirstStudent > theMagicOfTheSecondStudent) {
+//            System.out.println(firstName.getName() + firstName.getSurName() + " обладает большей мощностью магии, чем " + secondName.getName()+secondName.getSurName());
+//        } else if (theMagicOfTheFirstStudent == theMagicOfTheSecondStudent) {
+//            System.out.println("Cила магии " + firstName.getName() + firstName.getSurName() + " равна силе магии " + secondName.getName()+secondName.getSurName());
+//        } else System.out.println(secondName.getName()+secondName.getSurName() + " обладает большей мощностью магии, чем " + firstName.getName() + firstName.getSurName());
+//    }
+
+
+
+
+

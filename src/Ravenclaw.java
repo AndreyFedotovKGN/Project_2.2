@@ -53,13 +53,13 @@ public class Ravenclaw extends Hogwarts {
                 wisdom + " остроумие = " + wit + " творчество = " + creativity;
     }
 
-    public  static void comparisonOfStudents(Ravenclaw firstName, Ravenclaw secondName) {
-        int theSumOfTalentsOfTheFirstStudent = firstName.getTransgression() + firstName.getWitchcraft() + firstName.getMind() + firstName.getWisdom() + firstName.getWit() + firstName.getCreativity();
+    public void comparisonOfStudents(Ravenclaw secondName) {
+        int theSumOfTalentsOfTheFirstStudent = this.getTransgression() + this.getWitchcraft() + this.getMind() + this.getWisdom() + this.getWit() + this.getCreativity();
         int theSumOfTalentsOfTheSecondStudent = secondName.getWitchcraft() + secondName.getTransgression() + secondName.getMind() + secondName.getWisdom() + secondName.getWit() + secondName.getCreativity();
         if (theSumOfTalentsOfTheFirstStudent > theSumOfTalentsOfTheSecondStudent) {
-            System.out.println(firstName.getName()+firstName.getSurName() + " лучший студент Когтеврана, чем " + secondName.getName() + secondName.getSurName());
+            System.out.println(this.getName() + this.getSurName() + " лучший студент Когтеврана, чем " + secondName.getName() + secondName.getSurName());
         } else if (theSumOfTalentsOfTheFirstStudent == theSumOfTalentsOfTheSecondStudent) {
-            System.out.println("Силы " + firstName.getName()+firstName.getSurName() + " и " + secondName.getName() + secondName.getSurName() + " равны");
-        } else System.out.println(secondName.getName() + secondName.getSurName() + " лучший студент Когтеврана, чем " + firstName.getName()+firstName.getSurName());
+            System.out.println("Силы " + this.getName() + this.getSurName() + " и " + secondName.getName() + secondName.getSurName() + " равны");
+        } else System.out.println(secondName.getName() + secondName.getSurName() + " лучший студент Когтеврана, чем " + this.getName() + this.getSurName());
     }
 }

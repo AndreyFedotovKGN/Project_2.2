@@ -63,16 +63,16 @@ public class Slytherin extends Hogwarts {
                 "жажда власти = " + thirstForPower;
     }
 
-    public  static void comparisonOfStudents(Slytherin firstName, Slytherin secondName) {
-        int theSumOfTalentsOfTheFirstStudent = firstName.getTransgression() + firstName.getWitchcraft() +
-                firstName.getCunning() + firstName.getDetermination() + firstName.getAmbition() + firstName.getResourcefulness() + firstName.thirstForPower;
+    public void comparisonOfStudents(Slytherin secondName) {
+        int theSumOfTalentsOfTheFirstStudent = this.getTransgression() + this.getWitchcraft() +
+                this.getCunning() + this.getDetermination() + this.getAmbition() + this.getResourcefulness() + this.thirstForPower;
         int theSumOfTalentsOfTheSecondStudent = secondName.getWitchcraft() + secondName.getTransgression() + secondName.getCunning() +
                 secondName.getDetermination() + secondName.getAmbition() + secondName.getResourcefulness() + secondName.getThirstForPower();
         if (theSumOfTalentsOfTheFirstStudent > theSumOfTalentsOfTheSecondStudent) {
-            System.out.println(firstName.getName()+firstName.getSurName() + " лучший студент Слизерена, чем " + secondName.getName() + secondName.getSurName());
+            System.out.println(this.getName() + this.getSurName() + " лучший студент Слизерена, чем " + secondName.getName() + secondName.getSurName());
         } else if (theSumOfTalentsOfTheFirstStudent == theSumOfTalentsOfTheSecondStudent) {
-            System.out.println("Силы " + firstName.getName()+firstName.getSurName() + " и " + secondName.getName() + secondName.getSurName() + " равны");
-        } else System.out.println(secondName.getName() + secondName.getSurName() + " лучший студент Слизерена, чем " + firstName.getName()+firstName.getSurName());
+            System.out.println("Силы " + this.getName() + this.getSurName() + " и " + secondName.getName() + secondName.getSurName() + " равны");
+        } else System.out.println(secondName.getName() + secondName.getSurName() + " лучший студент Слизерена, чем " + this.getName() + this.getSurName());
     }
 
 }
